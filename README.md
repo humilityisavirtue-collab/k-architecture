@@ -1,6 +1,10 @@
 # K-Architecture
 
-**Semantic routing for LLMs. 25x efficiency via template-first inference.**
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Semantic routing for LLMs. Cut inference costs by 96%.**
+
+🔴 **[Live Demo: saga-logo.ai](https://saga-logo-ai.vercel.app)** — See K-routing in action
 
 ## The Thesis
 
@@ -11,7 +15,7 @@ Most LLM queries don't need generation. They need *routing*.
 16% → Local model (Ollama/Gemma)
  4% → API escalation (Claude/GPT)
 ───
-25x efficiency vs. raw LLM inference
+96% cost reduction vs. raw LLM inference
 ```
 
 ## The Insight
@@ -96,6 +100,12 @@ hook = install_klens(model, k_lens, layer=11)
 # Query routes to semantic room
 route = k_lens.get_route()  # {'suit': 'hearts', 'score': 0.87, ...}
 ```
+
+## Contact
+
+Built by Kit Malthaner ([@HumilityVirtue](https://twitter.com/HumilityVirtue))
+
+📧 kit@ksystems.ai
 
 ## License
 
